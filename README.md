@@ -36,43 +36,43 @@ For this part of the challenge I will be using __NoSQL_setup_starter.ipynb__ whi
 For this part of the challenge I will continue to use NoSQL_setup_SDT.ipynb we must make the following changes to the establishments collection per challenge instructions to complete the challenge:
 1) Add the following information to the database:
 
-|--------------------------------------------------------------------------|
-|  {                                                                       | 
-|      "BusinessName":"Penang Flavours",                                   |
-|      "BusinessType":"Restaurant/Cafe/Canteen",                           |
-|      "BusinessTypeID":"",                                                |
-|      "AddressLine1":"Penang Flavours",                                   |
-|      "AddressLine2":"146A Plumstead Rd",                                 |
-|      "AddressLine3":"London",                                            |
-|      "AddressLine4":"",                                                  |
-|      "PostCode":"SE18 7DY",                                              |
-|      "Phone":"",                                                         |
-|      "LocalAuthorityCode":"511",                                         |
-|      "LocalAuthorityName":"Greenwich",                                   |
-|      "LocalAuthorityWebSite":"http://www.royalgreenwich.gov.uk",         |
-|      "LocalAuthorityEmailAddress":"health@royalgreenwich.gov.uk",        |
-|      "scores":{                                                          |
-|          "Hygiene":"",                                                   |
-|          "Structural":"",                                                |
-|          "ConfidenceInManagement":""                                     |
-|      },                                                                  |
-|      "SchemeType":"FHRS",                                                |
-|      "geocode":{                                                         |
-|          "longitude":"0.08384000",                                       |
-|          "latitude":"51.49014200"                                        |
-|      },                                                                  |
-|      "RightToReply":"",                                                  |
-|      "Distance":4623.9723280747176,                                      |
-|      "NewRatingPending":True                                             |
-|  }                                                                       |
-|--------------------------------------------------------------------------|
+```
+{
+    "BusinessName":"Penang Flavours",
+    "BusinessType":"Restaurant/Cafe/Canteen",
+    "BusinessTypeID":"",
+    "AddressLine1":"Penang Flavours",
+    "AddressLine2":"146A Plumstead Rd",
+    "AddressLine3":"London",
+    "AddressLine4":"",
+    "PostCode":"SE18 7DY",
+    "Phone":"",
+    "LocalAuthorityCode":"511",
+    "LocalAuthorityName":"Greenwich",
+    "LocalAuthorityWebSite":"http://www.royalgreenwich.gov.uk",
+    "LocalAuthorityEmailAddress":"health@royalgreenwich.gov.uk",
+    "scores":{
+        "Hygiene":"",
+        "Structural":"",
+        "ConfidenceInManagement":""
+    },
+    "SchemeType":"FHRS",
+    "geocode":{
+        "longitude":"0.08384000",
+        "latitude":"51.49014200"
+    },
+    "RightToReply":"",
+    "Distance":4623.9723280747176,
+    "NewRatingPending":True
+}
+```
 
 2) Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
 3) Update the new restaurant with the BusinessTypeID you found.
 4) The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
 5) Some of the number values are stored as strings, when they should be stored as numbers.
-  1) Use update_many to convert latitude and longitude to decimal numbers.
-  2) Use update_many to convert RatingValue to integer numbers.
+ * Use update_many to convert latitude and longitude to decimal numbers.
+ * Use update_many to convert RatingValue to integer numbers.
 
 #### Requirement-2
 
