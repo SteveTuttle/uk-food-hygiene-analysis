@@ -8,8 +8,10 @@ UNC_data_bootcamp_module_12
 ***from the UNC Bootcamp instructions for this challenge***
 
 ## Deliverables
-To complete this challenge I will be using MongoDB Compass and Jupyter Notebooks. This challenge is broken down into three parts, 
-
+To complete this challenge I will be using MongoDB Compass and Jupyter Notebooks. This challenge is broken down into three parts, the details of each come from the BootCamp Instructions so there are no questions what I intend to accomplish. The three parts of this challenge are as follows:
+* Database and Jupyter Notebook Set Up
+* Update the Database
+* Exploratory Analysis
 
 ### Part-1: Database and Jupyter Notebook Set Up
 For this part of the challenge I will be using __NoSQL_setup_starter.ipynb__ which I have renamed ***NoSQL_setup_sdt.ipynb*** going forward. To accomplish this part of the challenge of we must complete the following steps as per challenge instructions:
@@ -28,7 +30,7 @@ For this part of the challenge I will be using __NoSQL_setup_starter.ipynb__ whi
 
 ***from the UNC Bootcamp instructions for this challenge***
 
-For this part of the challenge I will continue to use __NoSQL_setup_sdt.ipynb__ and make the following changes to the establishments collection per challenge instructions to complete the challenge:
+For this part of the challenge I will continue to use __NoSQL_setup_sdt.ipynb__ and make the following changes to the _establishments_ collection per challenge instructions to complete the challenge:
 1) Add the following information to the database:
 
 ```
@@ -62,12 +64,12 @@ For this part of the challenge I will continue to use __NoSQL_setup_sdt.ipynb__ 
 }
 ```
 
-2) Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the BusinessTypeID and BusinessType fields.
-3) Update the new restaurant with the BusinessTypeID you found.
+2) Find the BusinessTypeID for "Restaurant/Cafe/Canteen" and return only the _BusinessTypeID_ and _BusinessType_ fields.
+3) Update the new restaurant with the _BusinessTypeID_ you found.
 4) The magazine is not interested in any establishments in Dover, so check how many documents contain the Dover Local Authority. Then, remove any establishments within the Dover Local Authority from the database, and check the number of documents to ensure they were deleted.
 5) Some of the number values are stored as strings, when they should be stored as numbers.
- * Use update_many to convert latitude and longitude to decimal numbers.
- * Use update_many to convert RatingValue to integer numbers.
+ * Use _update_many_ to convert _latitude_ and _longitude_ to decimal numbers.
+ * Use _update_many_ to convert _RatingValue_ to integer numbers.
 
 
 ### Part-3: Exploratory Analysis
@@ -75,10 +77,10 @@ For this part of the challenge I will continue to use __NoSQL_setup_sdt.ipynb__ 
 
 ***from the UNC Bootcamp instructions for this challenge***
 
-For the final part of the Challenge I will open __NoSQL_analysis_starter.ipynb__ and rename it __NoSQL_analysis_sdt.ipynb__ and follow the instructions and notes to be aware of throughout the dataset listed below:
+For the final part of the Challenge I will open __NoSQL_analysis_starter.ipynb__ and rename it __NoSQL_analysis_sdt.ipynb__, then I will follow the instructions and notes from the Challenge that I need to be aware of throughout the dataset listed below:
 
 * _RatingValue_ refers to the overall rating decided by the Food Authority and ranges from 1-5. The higher the value, the better the rating.
- * Note: This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
+ * __Note:__ This field also includes non-numeric values such as 'Pass', where 'Pass' means that the establishment passed their inspection but isn't given a number rating. We will coerce non-numeric values to nulls during the database setup before converting ratings to integers.
 * The scores for Hygiene, Structural, and ConfidenceInManagement work in reverse. This means, the higher the value, the worse the establishment is in these areas.
 
 Use the following questions to explore the database, and find the answers, so you can provide them to the magazine editors.
@@ -127,5 +129,3 @@ _(where possible will provide link to website)_
 * [PyMongo documentation](https://pymongo.readthedocs.io/en/stable/index.html)
 * YouTube
 * Google
-
-
