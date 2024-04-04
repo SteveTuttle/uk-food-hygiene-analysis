@@ -1,4 +1,4 @@
-# nosql-challenge
+# uk-food-hygiene-analysis
 UNC_data_bootcamp_module_12
 
 ## Challenge Description
